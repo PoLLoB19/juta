@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+   
+  </head>
+  <body class="bg-[#DBDBDB]">
+    <div
+      class="navbar flex items-center justify-between px-2 bg-[#c4b9b944] shadow-lg xl:px-16 sticky top-0"
+    >
+      <div class="title text-[40px] text-[#2d2e2a]">JutaBD</div>
+      <div class="side-nav">
+        <button class="cart relative" onclick="cart()" >
+          <i class="fa-solid fa-bag-shopping text-[#2d2e2a] text-[25px]"></i>
+          <div class="absolute top-[-5px] right-[-10px] text-[15px] text-[#dd8b3f] cart-sign bg-[#ffffff73] rounded-full h-[20px] w-[20px] items-center justify-center flex font-[900]">0</div>
+        </button>
+      </div>
+    </div>
+
+      <div class="cart-items bg-[#999898cb] z-20 w-[50vw] md:w-[30vw] lg:w-[20vw]">
+        <button class="absolute right-4 top-2 block text-[15px] "  onclick="exit()">
+            <i class="fa-solid fa-x"></i>
+            </button>
+
+            <h1 class="text-center text-[20px] mb-2 mt-10 cart-h border-b-[1px] border-black">Your items are:</h1>    
+            <div class="buy_items h-[70vh] overflow-y-scroll"></div>
+
+            <div class="lis bg-[#3a3131] text-white fixed bottom-0 w-full  p-4 ">
+                <div class="total_it">Total Items:</div>
+                <div class="sub">Subtotal:</div>
+                <div class="mt-2">
+                  <button class="p-2  bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded buy_now">Buy Now</button>
+                </div>
+      </div>
+      </div>
+
+      <div
+      class="blackbox h-[100vh] w-[51vw] md:w-[71vw] lg:w-[79vw] bg-black"
+      onclick="exit()"
+    ></div>
+    <div class="main my-4 ">
+      <div class="text-center text-[30px] font-mono">Wear Glorious</div>
+      <div class="frontimg my-6 xl:items-center xl:flex xl:flex-col">
+        <img src="./Pictures/406866_25193_XL.jpg" alt="" srcset="" />
+        <img
+          src="./Pictures/406870_3175_XL.jpg"
+          alt=""
+          srcset=""
+          class="my-4"
+        />
+      </div>
+      <div
+        class="text-center text-[18px] font-mono border-b-[1px] border-black pb-6 xl:text-[30px]"
+      >
+        Every Step has A Story to Tell
+      </div>
+
+      <div class="about items-center flex flex-col">
+        <div class="text-center mt-3 text-[25px] font-[600]">About Us</div>
+        <div class="text-center mb-3 text-[15px] font-mono">Discover the World of Jutabd</div>
+        <div class=" font-serif  text-center mx-8 xl:w-[40vw]">
+          At Jutabd, we believe in the power of innovation, creativity, and
+          authenticity. Founded with a vision to redefine the way people
+          experience Footwear, we are a dynamic team dedicated to
+          crafting exceptional products that inspire and elevate everyday life.
+
+          <div>
+            Our journey began with a simple idea: to create Comfortable,Stylish and Affordable Shoes. Fueled by passion and guided by a
+            commitment to excellence, we embarked on a mission to bring this
+            vision to life. Since then, we've grown and evolved, but our core
+            values remain unchanged.
+          </div>
+          <div>
+            What sets us apart is our relentless pursuit of quality and
+            innovation. From the finest materials to cutting-edge technology, we
+            spare no effort in ensuring that every product bearing the Jutabd
+            name meets the highest standards of craftsmanship and design.
+          </div>
+
+          <div>
+            But our story is not just about products; it's about people. We are
+            proud to be part of a vibrant community of Youth, united by a shared appreciation for passion. Whether you're a seasoned enthusiast or a curious
+            newcomer, there's a place for you in the world of Jutabd.
+          </div>
+
+          <div>
+            At Jutabd, we're not just building a brand; we're building a legacy.
+            With each new creation, we strive to leave a lasting impression, to
+            spark joy and inspiration in the lives of our customers. Join us on
+            this journey as we continue to push the boundaries of what's
+            possible and unlock the endless possibilities of tomorrow.
+          </div>
+
+          <div>
+            Welcome to Jutabd—where imagination knows no limits, and every
+            moment is an opportunity to dream, create, and explore.
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="products">
+        <div class="text-center mt-3 text-[25px] font-[600]">  Our Products </div>
+
+        <div class="shoes flex flex-wrap justify-between mx-5 mt-10">
+            <div class="item my-4 w-[40vw] xl:w-[20vw] items-center flex flex-col ">
+                <img src="./Pictures/2e8cd738-d0d3-4e1f-a6e4-d4ca559a9b37.jpg" alt="" class="shadow-lg cursor-pointer transition-transform hover:scale-105 image">
+                <div class="price text-[25px] font-mono">$15</div>
+                <button class="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded buy">Buy Now</button>
+            </div>
+            <div class="item my-4 w-[40vw] xl:w-[20vw] items-center flex flex-col ">
+                <img src="./Pictures/691995e1-1413-4768-98e8-c4f7af296127.jpg" alt=""  class="shadow-lg cursor-pointer transition-transform hover:scale-105   image">
+                <div class="price text-[25px] font-mono">$12</div>
+                <button class="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded buy">Buy Now</button>
+            </div>
+            <div class="item my-4 w-[40vw] xl:w-[20vw] items-center flex flex-col ">
+                <img src="./Pictures/8b8cc483-e7b8-4615-ba6e-48d8d9baaf19.jpg" alt=""  class="shadow-lg cursor-pointer transition-transform hover:scale-105  image">
+                <div class="price text-[25px] font-mono">$16</div>
+                <button class="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded buy">Buy Now</button>
+            </div>
+            <div class="item my-4 w-[40vw] xl:w-[20vw] items-center flex flex-col ">
+                <img src="./Pictures/a84675ce-168d-4bbd-9cec-2a5275a2ef7e.jpeg" alt="" class="shadow-lg cursor-pointer transition-transform hover:scale-105  image" >
+                <div class="price text-[25px] font-mono">$20</div>
+                <button class="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded buy">Buy Now</button>
+            </div>
+            <div class="item my-4 w-[40vw] xl:w-[20vw] items-center flex flex-col ">
+                <img src="./Pictures/db1336c7-ea4f-445d-978f-8cbada6fc253.jpg" alt=""  class="shadow-lg cursor-pointer transition-transform hover:scale-105  image">
+                <div class="price text-[25px] font-mono">$10</div>
+                <button class="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded buy">Buy Now</button>
+            </div>
+            <div class="item my-4 w-[40vw] xl:w-[20vw] items-center flex flex-col ">
+                <img src="./Pictures/ed6c1e9e-0c05-403d-9cd1-1e45553e8f24.jpg" alt=""  class="shadow-lg cursor-pointer transition-transform hover:scale-105  image">
+                <div class="price text-[25px] font-mono">$18</div>
+                <button class="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded buy">Buy Now</button>
+            </div>
+            <div class="item my-4 w-[40vw] xl:w-[20vw] items-center flex flex-col ">
+                <img src="./Pictures/db1336c7-ea4f-445d-978f-8cbada6fc253.jpg" alt="" class="shadow-lg cursor-pointer transition-transform hover:scale-105  image" >
+                <div class="price text-[25px] font-mono">$10</div>
+                <button class="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded buy">Buy Now</button>
+            </div>
+            <div class="item my-4 w-[40vw] xl:w-[20vw] items-center flex flex-col ">
+                <img src="./Pictures/f5fda770-018b-42d7-8c1b-9da71b54ba24.jpg" alt="" class="shadow-lg cursor-pointer transition-transform hover:scale-105  image" >
+                <div class="price text-[25px] font-mono">$17</div>
+                <button class="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded buy">Buy Now</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-gray-800 text-white p-8 mt-4">
+        <div class="">
+          <div class="flex justify-between items-center">
+            <div>
+              <h3 class="text-xl font-semibold">Contact Us</h3>
+              <p class="mt-2">0133456778</p>
+              <p>Rajshahi,Bangladesh</p>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold">Follow Us</h3>
+              <div class="flex mt-2">
+                <a href="#" class="mr-4"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="mr-4"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4 border-gray-600">
+          <div class="text-center">
+            <p>©2024 JutaBD.com All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
